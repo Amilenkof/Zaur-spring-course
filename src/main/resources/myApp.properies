@@ -1,0 +1,8 @@
+//создание переменных которые можно записать в Application context - для создания бинов и инжекта их в поля
+
+person.surname=Vasechkin
+person.age=54
+
+
+dog.name1=Белка
+dog.name2=Стрелка
