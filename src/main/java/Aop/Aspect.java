@@ -94,7 +94,13 @@ public class Aspect {
         System.out.println("methodSignature.getReturnType()"+methodSignature.getReturnType());//вернет = void
         System.out.println("methodSignature.getName()"+methodSignature.getName());//вернет = Параметр 1= ОКПараметр 2 = 2312
 
+        Object[] arguments = joinPoint.getArgs();
+        for (Object o: arguments) {
+            if (o instanceof String) {//проверяем принадлежит ли обьект классу стринг
+                System.out.println("это строка");// если в параметрах был бы обьект можно было например получить инфо про обьект и чтото с ней сделать
 
+            }
+        }
     }
 
     }
