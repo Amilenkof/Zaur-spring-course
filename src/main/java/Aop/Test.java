@@ -7,11 +7,20 @@ public class Test {
         AnnotationConfigApplicationContext context = new
                 AnnotationConfigApplicationContext(MyConfig.class);
         uLibraly libraly = context.getBean("uLibraly", uLibraly.class);
-        libraly.getBook();
+//        libraly.getBook();
         SLibraly sLibraly = context.getBean("SLibraly", SLibraly.class);
-        sLibraly.getBook();
-        sLibraly.returnBook();
-        sLibraly.getMagazine();
+//        sLibraly.getBook();
+//        sLibraly.returnBook();
+//        sLibraly.getMagazine();
+//        sLibraly.anithingWithBook(" ок ");
+
+
+        sLibraly.joinPointTest("ОК",2312);
+
+
+
+
+
         context.close();
     }
 }
