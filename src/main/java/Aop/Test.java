@@ -15,8 +15,8 @@ public class Test {
 //        sLibraly.anithingWithBook(" ок ");
 
 
-        sLibraly.joinPointTest("ОК",2312);
-
+//        sLibraly.joinPointTest("ОК",2312);
+        sLibraly.returnAround();
 
 
 

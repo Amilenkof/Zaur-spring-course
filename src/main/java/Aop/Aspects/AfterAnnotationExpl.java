@@ -1,17 +1,18 @@
 package Aop.Aspects;
 
 import org.aspectj.lang.annotation.*;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 
-import java.util.ArrayList;
 import java.util.List;
 /**Демонстрация работы @AFTERRETURNING**/
 
 //AFTERRETURNING вызывает адвайсы после выполнения метода бизнес логики
 @Component
 @Aspect
-public class UniversityLoginAspect {
+@Order(-1)
+public class AfterAnnotationExpl {
 
 
     @Before("execution (* getStudents())")

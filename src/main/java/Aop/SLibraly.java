@@ -28,6 +28,10 @@ public class SLibraly extends AbstractLibraly{
     public void addMagazin() {
         System.out.println("добавляем журнал в Slibraly" );
     }
+    public String returnAround () {
+        System.out.println("проверка аннотации Round");
+        return "Метод returnAround";
+    }
 
     public void joinPointTest(String s,int a ) {
         System.out.println("Параметр 1= " +s +"Параметр 2 = "+ a);
